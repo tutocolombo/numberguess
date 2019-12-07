@@ -16,4 +16,4 @@ def check(n1, n2):
                 n1[j] = "n1"
                 n2[k] = "n2"
                 break
-    return good, reg
+    return [str(good), str(reg)]
