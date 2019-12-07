@@ -1,5 +1,3 @@
-import sys
-
 
 def check(n1, n2):
     if n1 == n2:
@@ -19,13 +17,3 @@ def check(n1, n2):
                 n2[k] = "n2"
                 break
     return good, reg
-
-
-if __name__ == "__main__":
-    if len(sys.argv) != 3:
-        sys.exit("need 2 numbers")
-    if len(sys.argv[1]) != len(sys.argv[2]):
-        sys.exit("need same length numbers")
-
-    print(check(list(sys.argv[1]), list(sys.argv[2])))
-
