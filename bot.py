@@ -19,11 +19,5 @@ if __name__ == "__main__":
             break
         print("Turn: {}. {:004d} -> {}M{}C".format(turn, guess, result[0], result[1]))
         codes = [x for x in codes if result == checker.check(list("{:004d}".format(x)), list("{:004d}".format(guess)))]
-        # for x in codes:
-        #     result2 = checker.check(list("{:004d}".format(x)), list(str(guess)))
-        #     print(x, result2)
-        #     if result != result2:
-        #         codes.remove(x)
-        #         print("removed")
         turn += 1
         guess = random.choice(codes)
