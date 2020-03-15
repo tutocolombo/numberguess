@@ -19,8 +19,8 @@ class Bot:
             return 0
         print("Bot turn: {}. {:004d} -> {}M{}C".format(self.turn, self.guess, result[0], result[1]))
         self.codes = [x for x in self.codes if result == checker.check(list("{:004d}".format(x)), list("{:004d}".format(self.guess)))]
-        self.turn += 1
         self.guess = random.choice(self.codes)
+        self.turn += 1
         return 1
 
 
