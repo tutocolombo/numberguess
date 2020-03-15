@@ -13,3 +13,9 @@ If you guess 0445, you get 0M1C. the 4 is there, but in an incorrect position, o
 If the numbers are repeated, only one occurrence is taken into account.
 
 
+## Usage
+Simply run client.py and follow instructions.
+
+
+## To do
+Refactor client code to reduce complexity.
