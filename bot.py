@@ -30,4 +30,3 @@ if __name__ == "__main__":
     bot.number = numfunc.conv_num(number)
     while bot.play():
         continue
-
